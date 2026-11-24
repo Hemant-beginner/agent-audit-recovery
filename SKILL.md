@@ -105,7 +105,7 @@ For malformed hunter output:
 1. Preserve the raw output under the producing owner's scratch directory.
 2. Exclude it from consolidation.
 3. Leave affected unevidenced units `planned` with null owner and empty evidence.
-4. Assign a fresh canonical owner, preferably with a new suffix such as `h-store2`.
+4. Assign a fresh canonical owner, preferably with a new suffix such as `hunter-reassign-1`.
 5. Re-establish the evidence independently; do not repair or copy claims from the malformed attempt.
 
 For a critic reopening a unit that already has terminal evidence, follow the governing skill's `attempts` contract: archive the exact terminal record and source-backed reassignment reason, increment `wave`, use a fresh owner, and start with empty live evidence. Do not apply this archive rule to an unevidenced malformed attempt.
