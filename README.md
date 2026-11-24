@@ -1,6 +1,10 @@
-# Multi-Agent Audit Recovery
+# Agent Audit Recovery
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A reusable, source-first playbook for recovering interrupted multi-agent security audits.
+
+Repository: [Hemant-beginner/agent-audit-recovery](https://github.com/Hemant-beginner/agent-audit-recovery)
 
 Use this skill when agents have returned results that were never saved, a coverage ledger is inconsistent, hunter output is malformed, Windows rejects validator input, or agent credits run out before consolidation. It complements an existing audit workflow; it does not replace the governing skill's evidence, sandbox, coverage, or independent-validation rules.
 
@@ -47,9 +51,16 @@ The scripts do not install dependencies or execute target code.
 
 ## Installation
 
+Clone the repository:
+
+```bash
+git clone https://github.com/Hemant-beginner/agent-audit-recovery.git
+cd agent-audit-recovery
+```
+
 Copy this directory into a skill location supported by your agent platform. For Qoder CLI user-level installation, use the platform's documented skills directory, then reload the skills list.
 
-Keep the directory name `multi-agent-audit-recovery` and preserve the `SKILL.md` filename.
+Keep the skill directory name `multi-agent-audit-recovery` and preserve the `SKILL.md` filename. The repository name and internal skill name serve different purposes.
 
 ## Quick start
 
@@ -90,6 +101,7 @@ Use `--write` instead of `--out` only after reviewing the staged result and obta
 - [Usage guide](docs/USAGE.md) — inputs, commands, exit codes, and recovery sequence.
 - [Security guide](docs/SECURITY.md) — trust boundaries, safe-use rules, and limitations.
 - [Testing guide](docs/TESTING.md) — synthetic fixtures and regression checks.
+- [Issues](https://github.com/Hemant-beginner/agent-audit-recovery/issues) — report bugs or request improvements.
 
 ## Safety summary
 
